@@ -10,6 +10,19 @@ Browser বন্ধ বা page refresh হলেও data থাকে, যত�
  * Browser-e store হয়, server-e না
  * সাধারণত প্রায় 5–10 MB পর্যন্ত data রাখা যায়
  */
+
+
+/**
+ * setItem()
+→ Local Storage-এ data save করার জন্য ব্যবহার করা হয়।
+ * getItem()
+→ Local Storage-থেকে save করা data retrieve / নেওয়ার জন্য ব্যবহার করা হয়।
+ */
+
+/**
+ * Primitive data (string, number, boolean) directly Local Storage-এ set করা যায়।
+ * কিন্তু Non-primitive data (object, array) directly set করা যায় না, কারণ Local Storage শুধু string store করে।
+ */
 const addNumberToLS = () => {
     const number = Math.ceil(Math.random() * 100);
     console.log(number);
